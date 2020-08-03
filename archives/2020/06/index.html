@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Archives | 骨灰，飞，飞，飞</title><meta name="description"><meta name="author" content="Liang Shiben"><meta name="copyright" content="Liang Shiben"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://abeduu.com/archives/2020/06/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="Archives"><meta property="og:url" content="http://abeduu.com/archives/2020/06/"><meta property="og:site_name" content="骨灰，飞，飞，飞"><meta property="og:description"><meta property="og:image" content="http://abeduu.com/img/avatar.png"><meta property="article:published_time" content="2020-08-03T17:46:55.358Z"><meta property="article:modified_time" content="2020-08-03T17:46:55.358Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-08-04 01:46:55'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/atom.xml" title="骨灰，飞，飞，飞" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">31</div></a></div></div></div><hr/></div></div><div id="body-wrap"><header class="not-index-bg" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">骨灰，飞，飞，飞</a></span><span class="pull-right menus"><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="page_site-info"><h1 id="site_title">Archives</h1></div></header><main class="layout_page" id="content-inner"><div id="archive"><div class="article-sort-title">Articles - 31</div><div class="article-sort"><div class="article-sort-item year">2020</div><div class="article-sort-item"><a class="article-sort-item-img" href="/2020/06/15/%E8%87%AA%E4%BF%A1%E4%B8%8E%E6%9C%BA%E6%95%8F/" title="自信与机敏"><img data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="自信与机敏" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-06-15T01:39:29.000Z" title="Created 2020-06-15 09:39:29">2020-06-15</time></div><a class="article-sort-item-title" href="/2020/06/15/%E8%87%AA%E4%BF%A1%E4%B8%8E%E6%9C%BA%E6%95%8F/" title="自信与机敏">自信与机敏</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2020/06/15/%E9%95%BF%E7%9F%AD%E7%94%B5%E7%BA%BF%E6%80%9D%E8%BE%A8/" title="长短电线思辨"><img data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="长短电线思辨" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-06-15T01:07:52.000Z" title="Created 2020-06-15 09:07:52">2020-06-15</time></div><a class="article-sort-item-title" href="/2020/06/15/%E9%95%BF%E7%9F%AD%E7%94%B5%E7%BA%BF%E6%80%9D%E8%BE%A8/" title="长短电线思辨">长短电线思辨</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2020/06/09/%E6%BF%80%E6%83%85%E4%B9%8B%E4%B8%8B%E7%9A%84%E5%BF%BD%E8%A7%86/" title="激情之下的忽视"><img data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="激情之下的忽视" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-06-08T18:08:57.000Z" title="Created 2020-06-09 02:08:57">2020-06-09</time></div><a class="article-sort-item-title" href="/2020/06/09/%E6%BF%80%E6%83%85%E4%B9%8B%E4%B8%8B%E7%9A%84%E5%BF%BD%E8%A7%86/" title="激情之下的忽视">激情之下的忽视</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2020/06/08/%E7%B2%BE%E7%A0%94%E6%81%90%E6%83%A7%E4%B9%8B%E5%A4%84/" title="精研恐惧之处"><img data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="精研恐惧之处" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-06-07T17:47:41.000Z" title="Created 2020-06-08 01:47:41">2020-06-08</time></div><a class="article-sort-item-title" href="/2020/06/08/%E7%B2%BE%E7%A0%94%E6%81%90%E6%83%A7%E4%B9%8B%E5%A4%84/" title="精研恐惧之处">精研恐惧之处</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2020/06/07/3%E5%B9%B4%E5%89%8D%E4%B8%8E3%E5%B9%B4%E5%90%8E/" title="3年前与3年后"><img data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="3年前与3年后" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-06-07T01:30:32.000Z" title="Created 2020-06-07 09:30:32">2020-06-07</time></div><a class="article-sort-item-title" href="/2020/06/07/3%E5%B9%B4%E5%89%8D%E4%B8%8E3%E5%B9%B4%E5%90%8E/" title="3年前与3年后">3年前与3年后</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2020/06/02/%E5%8F%88%E4%B8%80%E7%A7%8D%E5%85%B7%E4%BD%93%E7%9A%84%E5%A4%B1%E8%B4%A5/" title="又一种具体的失败"><img data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="又一种具体的失败" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-06-02T15:33:44.000Z" title="Created 2020-06-02 23:33:44">2020-06-02</time></div><a class="article-sort-item-title" href="/2020/06/02/%E5%8F%88%E4%B8%80%E7%A7%8D%E5%85%B7%E4%BD%93%E7%9A%84%E5%A4%B1%E8%B4%A5/" title="又一种具体的失败">又一种具体的失败</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2020/06/01/%E4%BD%A0%E9%82%A3%E5%8D%91%E5%BE%AE%E7%9A%84%E6%A0%B7%E5%AD%90%E8%AE%A9%E6%88%91%E4%B8%8D%E6%83%B3%E8%AF%B4%E8%AF%9D/" title="你那卑微的样子让我不想说话"><img data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="你那卑微的样子让我不想说话" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2020-06-01T00:53:14.000Z" title="Created 2020-06-01 08:53:14">2020-06-01</time></div><a class="article-sort-item-title" href="/2020/06/01/%E4%BD%A0%E9%82%A3%E5%8D%91%E5%BE%AE%E7%9A%84%E6%A0%B7%E5%AD%90%E8%AE%A9%E6%88%91%E4%B8%8D%E6%83%B3%E8%AF%B4%E8%AF%9D/" title="你那卑微的样子让我不想说话">你那卑微的样子让我不想说话</a></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Liang Shiben</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">Articles</div><div class="length_num">31</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/07/23/%E7%94%B7%E4%BA%BA30%E4%B8%8D%E6%AD%BB/" title="男人30不死"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="男人30不死"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/07/23/%E7%94%B7%E4%BA%BA30%E4%B8%8D%E6%AD%BB/" title="男人30不死">男人30不死</a><time class="aside-post_meta post-meta-date" datetime="2020-07-23T01:52:10.000Z" title="Created 2020-07-23 09:52:10">2020-07-23</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/07/23/%E7%94%B7%E4%BA%BA%E5%A5%B3%E4%BA%BA/" title="男人女人"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="男人女人"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/07/23/%E7%94%B7%E4%BA%BA%E5%A5%B3%E4%BA%BA/" title="男人女人">男人女人</a><time class="aside-post_meta post-meta-date" datetime="2020-07-23T00:08:35.000Z" title="Created 2020-07-23 08:08:35">2020-07-23</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/07/23/%E7%A5%9E%E7%BB%8F%E7%97%85/" title="神经病"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="神经病"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/07/23/%E7%A5%9E%E7%BB%8F%E7%97%85/" title="神经病">神经病</a><time class="aside-post_meta post-meta-date" datetime="2020-07-22T17:48:36.000Z" title="Created 2020-07-23 01:48:36">2020-07-23</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/07/23/%E5%88%86%E6%89%8B%E7%9A%84%E4%B8%A5%E8%82%83%E6%80%A7/" title="分手的严肃性"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="分手的严肃性"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/07/23/%E5%88%86%E6%89%8B%E7%9A%84%E4%B8%A5%E8%82%83%E6%80%A7/" title="分手的严肃性">分手的严肃性</a><time class="aside-post_meta post-meta-date" datetime="2020-07-22T17:05:30.000Z" title="Created 2020-07-23 01:05:30">2020-07-23</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/06/15/%E8%87%AA%E4%BF%A1%E4%B8%8E%E6%9C%BA%E6%95%8F/" title="自信与机敏"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="自信与机敏"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/06/15/%E8%87%AA%E4%BF%A1%E4%B8%8E%E6%9C%BA%E6%95%8F/" title="自信与机敏">自信与机敏</a><time class="aside-post_meta post-meta-date" datetime="2020-06-15T01:39:29.000Z" title="Created 2020-06-15 09:39:29">2020-06-15</time></div></div></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">July 2020</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">June 2020</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">May 2020</span><span class="card-archive-list-count">20</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">Article :</div><div class="webinfo-article-count">31</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">UV :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">PV :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Liang Shiben</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
