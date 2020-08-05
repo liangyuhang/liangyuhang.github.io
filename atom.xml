@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://abeduu.com/"/>
-  <updated>2020-08-05T20:38:37.018Z</updated>
+  <updated>2020-08-05T18:11:28.751Z</updated>
   <id>http://abeduu.com/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>matplotlib使用arrow来绘制向量</title>
-    <link href="http://abeduu.com/2020/08/06/%E4%BD%BF%E7%94%A8matplotlib%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E5%9D%97%E5%BF%AB%E9%80%9F%E6%9B%B4%E6%96%B0%E6%9B%B2%E7%BA%BF/"/>
-    <id>http://abeduu.com/2020/08/06/%E4%BD%BF%E7%94%A8matplotlib%E7%9A%84%E5%8A%A8%E7%94%BB%E6%A8%A1%E5%9D%97%E5%BF%AB%E9%80%9F%E6%9B%B4%E6%96%B0%E6%9B%B2%E7%BA%BF/</id>
-    <published>2020-08-05T20:35:06.000Z</published>
-    <updated>2020-08-05T20:38:37.018Z</updated>
-    
-    <content type="html"><![CDATA[<p>我曾写过一篇<a href="https://www.kuxai.com/post/93">《使用quiver绘制向量》</a>，但这委实大材小用了。<br>今天介绍的是使用<a href="https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.arrow.html?highlight=arrow#matplotlib.axes.Axes.arrow">arrow</a>来绘制向量，相比quiver要简单很多，<br>但可惜的是，这个方法只能用在二维向量，若想绘制三维向量，可以跳转到<a href="https://www.kuxai.com/post/94">《用matplotlib在三维空间绘制向量》</a><br><img src= "/img/loading.gif" data-lazy-src="post/images/1596171841993911.jpg" alt="修改这张图片的说明"></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">ax = plt.axes()</span><br><span class="line">ax.arrow(<span class="number">0.3</span>, <span class="number">0.3</span>, <span class="number">0.5</span>, <span class="number">0.5</span>, head_width=<span class="number">0.05</span>, head_length=<span class="number">0.1</span>,fc=<span class="string">&#x27;k&#x27;</span>,ec=<span class="string">&#x27;k&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure><p>API:</p><blockquote><p>Axes.arrow(self, x, y, dx, dy, **kwargs)</p></blockquote><p>说明：</p><ul><li>x:矢量的起点（箭头的尾部）的x坐标</li><li>y:矢量的起点（箭头的尾部）的y坐标</li><li>dx:矢量终点的横坐标为x+dx</li><li>dy:矢量终点的横坐标为y+dy</li></ul><p>另外，代码中的head_length是箭头长度，head_width为宽度，fc为填充色（三角形部分的颜色），ec为边缘色，其他具体见<br><a href="https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.arrow.html?highlight=arrow#matplotlib.axes.Axes.arrow">arrow</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;我曾写过一篇&lt;a href=&quot;https://www.kuxai.com/post/93&quot;&gt;《使用quiver绘制向量》&lt;/a&gt;，但这委实大材小用了。&lt;br&gt;今天介绍的是使用&lt;a href=&quot;https://matplotlib.org/api/_as_gen/matplo
-      
-    
-    </summary>
-    
-    
-    
-      <category term="matplotlib解析" scheme="http://abeduu.com/tags/matplotlib%E8%A7%A3%E6%9E%90/"/>
-    
-  </entry>
   
   <entry>
     <title>不可名状的恐怖之梦</title>
@@ -498,6 +474,32 @@
         &lt;p&gt;今天，车买来不足月，又蹭了两面漆。&lt;/p&gt;
 &lt;p&gt;蹭的路口是我每次开车都会心惊胆战的路口，但是我经过时从来没下车仔细看过。&lt;/p&gt;
 &lt;p&gt;我在想，如果没有因为导航错误，我就不会这么晚回家，不会骂HUD好久，自然也不会把车蹭了。但每件事用这种思路去想，就有种决定论的味道，虽不
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>3年前与3年后</title>
+    <link href="http://abeduu.com/2020/06/07/3%E5%B9%B4%E5%89%8D%E4%B8%8E3%E5%B9%B4%E5%90%8E/"/>
+    <id>http://abeduu.com/2020/06/07/3%E5%B9%B4%E5%89%8D%E4%B8%8E3%E5%B9%B4%E5%90%8E/</id>
+    <published>2020-06-07T01:30:32.000Z</published>
+    <updated>2020-06-07T01:33:23.619Z</updated>
+    
+    <content type="html"><![CDATA[<p>三年前的凌晨，客户打过来电话，说是死机了。</p><p>我立马起床，查看程序，更新后发给客户。</p><p>三年后的早上，客户打过来电话，说是死机了。</p><p>我说：“今天休息没上班，我周一给你们一个更新”</p><p>同样一台设备，三年前死机，三年后还是死机，是应该好好反省一下了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;三年前的凌晨，客户打过来电话，说是死机了。&lt;/p&gt;
+&lt;p&gt;我立马起床，查看程序，更新后发给客户。&lt;/p&gt;
+&lt;p&gt;三年后的早上，客户打过来电话，说是死机了。&lt;/p&gt;
+&lt;p&gt;我说：“今天休息没上班，我周一给你们一个更新”&lt;/p&gt;
+&lt;p&gt;同样一台设备，三年前死机，三年后还是死机，
       
     
     </summary>
