@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://abeduu.com/2020/08/11/%E8%B7%B3%E8%BF%9B%E6%B2%B3%E9%87%8C%E7%9A%84%E5%90%8C%E5%AD%A6/</loc>
+    
+    <lastmod>2020-08-11</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://abeduu.com/2020/08/04/%E6%BA%BA%E6%AD%BB%E5%9C%A8%E5%AD%A6%E6%B5%B7%E4%B8%AD%E7%9A%84%E9%B8%B5%E9%B8%9F/</loc>
     
     <lastmod>2020-08-05</lastmod>
@@ -324,6 +331,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>http://abeduu.com/tags/%E6%9D%82%E8%AE%B0/</loc>
+    <lastmod>2020-08-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 
   
