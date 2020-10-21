@@ -68,52 +68,6 @@
   
   <entry>
     <title></title>
-    <link href="http://abeduu.com/2020/09/02/%E7%82%B9%E5%AF%B9%E7%82%B9/"/>
-    <id>http://abeduu.com/2020/09/02/%E7%82%B9%E5%AF%B9%E7%82%B9/</id>
-    <published>2020-09-01T17:50:30.968Z</published>
-    <updated>2020-09-01T17:50:31.219Z</updated>
-    
-    <content type="html"><![CDATA[<p>点对点</p><p><img src= "/img/loading.gif" data-lazy-src="C:\Users\Ushop\AppData\Roaming\Typora\typora-user-images\image-20200829144915375.png" alt="image-20200829144915375"></p><p>完全锥形NAT：网关不拦截外部信号</p><p>IP限制锥形NAT：只允许特定地址传入信号</p><p>端口限制锥形NAT：不单限制IP，还限制端口</p><p>对称NAT:电信级的网关都是，每连接依次服务器产生的公网IP都不一样</p><p>用两台服务器对比IP地址，两个不一样是对称NAT，一样是锥形NAT</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;点对点&lt;/p&gt;
-&lt;p&gt;&lt;img src= &quot;/img/loading.gif&quot; data-lazy-src=&quot;C:\Users\Ushop\AppData\Roaming\Typora\typora-user-images\image-20200829144915375.p
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://abeduu.com/2020/08/29/Yarn%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/"/>
-    <id>http://abeduu.com/2020/08/29/Yarn%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F/</id>
-    <published>2020-08-29T01:32:12.539Z</published>
-    <updated>2020-08-29T06:48:42.083Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://zhuanlan.zhihu.com/p/27449990">npm和yarn的区别，我们该如何选择？</a>转载自知乎</p><p><img src= "/img/loading.gif" data-lazy-src="https://pic1.zhimg.com/v2-c8310adf817b8882c4434c0a03c98a80_1440w.jpg?source=172ae18b" alt="npm和yarn的区别，我们该如何选择？"></p><p>周一入职，同事JJ让我熟悉一下基于React的新项目。<br>按照以往，我的步骤都是：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone xxx</span><br><span class="line">npm install</span><br><span class="line">npm run dev</span><br></pre></td></tr></table></figure><p>这时，JJ给我来了下面一段</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone xxx</span><br><span class="line">yarn</span><br><span class="line">yarn start</span><br></pre></td></tr></table></figure><p>“咦，yarn是什么鬼？难道npm更高级的替代品？为什么要替代npm？难道有什么好的地方？”，内心一连串的问题冒出来。我就默默的问了一下JJ：“yarn是跟npm一样的东西吗？”，“嗯。”JJ忙碌的敲着键盘，显然这个问题不值得继续问下去了。我也默默的把刚才脑子里一连串的问题记了下来。</p><h2 id="Yarn是什么？"><a href="#Yarn是什么？" class="headerlink" title="Yarn是什么？"></a>Yarn是什么？</h2><p>“Yarn是由Facebook、Google、Exponent 和 Tilde 联合推出了一个新的 JS 包管理工具 ，正如<a href="https://link.zhihu.com/?target=https://code.facebook.com/posts/1840075619545360">官方文档</a>中写的，Yarn 是为了弥补 npm 的一些缺陷而出现的。”这句话让我想起了使用npm时的坑了：<br>- <code>npm install</code>的时候<strong>巨慢</strong>。特别是新的项目拉下来要等半天，删除node_modules，重新install的时候依旧如此。<br>- 同一个项目，安装的时候<strong>无法保持一致性</strong>。由于package.json文件中版本号的特点，下面三个版本号在安装的时候代表不同的含义。</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;5.0.3&quot;,</span><br><span class="line">&quot;~5.0.3&quot;,</span><br><span class="line">&quot;^5.0.3&quot;</span><br></pre></td></tr></table></figure><p>“5.0.3”表示安装指定的5.0.3版本，“～5.0.3”表示安装5.0.X中最新的版本，“^5.0.3”表示安装5.X.X中最新的版本。这就麻烦了，常常会出现同一个项目，有的同事是OK的，有的同事会由于安装的版本不一致出现bug。<br>- 安装的时候，包会在同一时间下载和安装，中途某个时候，一个包抛出了一个错误，但是npm会继续下载和安装包。因为npm会把所有的日志输出到终端，有关错误包的错误信息就会在一大堆npm打印的警告中丢失掉，并且你甚至永远<strong>不会注意到实际发生的错误</strong>。</p><p>带着这些坑，我开始了解Yarn的优势及其解决的问题。</p><h2 id="Yarn的优点？"><a href="#Yarn的优点？" class="headerlink" title="Yarn的优点？"></a>Yarn的优点？</h2><ul><li><strong>速度快</strong> 。速度快主要来自以下两个方面：</li></ul><ol><li>并行安装：无论 npm 还是 Yarn 在执行包的安装时，都会执行一系列任务。npm 是按照队列执行每个 package，也就是说必须要等到当前 package 安装完成之后，才能继续后面的安装。而 Yarn 是同步执行所有任务，提高了性能。</li><li>离线模式：如果之前已经安装过一个软件包，用Yarn再次安装时之间从缓存中获取，就不用像npm那样再从网络下载了。</li></ol><ul><li>安装<strong>版本统一</strong>：为了防止拉取到不同的版本，Yarn 有一个锁定文件 (lock file) 记录了被确切安装上的模块的版本号。每次只要新增了一个模块，Yarn 就会创建（或更新）yarn.lock 这个文件。这么做就保证了，每一次拉取同一个项目依赖时，使用的都是一样的模块版本。npm 其实也有办法实现处处使用相同版本的 packages，但需要开发者执行 npm shrinkwrap 命令。这个命令将会生成一个锁定文件，在执行 npm install 的时候，该锁定文件会先被读取，和 Yarn 读取 yarn.lock 文件一个道理。npm 和 Yarn 两者的不同之处在于，Yarn 默认会生成这样的锁定文件，而 npm 要通过 shrinkwrap 命令生成 npm-shrinkwrap.json 文件，只有当这个文件存在的时候，packages 版本信息才会被记录和更新。</li><li><strong>更简洁的输出</strong>：npm 的输出信息比较冗长。在执行 npm install 的时候，命令行里会不断地打印出所有被安装上的依赖。相比之下，Yarn 简洁太多：默认情况下，结合了 emoji直观且直接地打印出必要的信息，也提供了一些命令供开发者查询额外的安装信息。</li><li><strong>多注册来源处理：</strong>所有的依赖包，不管他被不同的库间接关联引用多少次，安装这个包时，只会从一个注册来源去装，要么是 npm 要么是 bower, 防止出现混乱不一致。</li><li><strong>更好的语义化</strong>： yarn改变了一些npm命令的名称，比如 yarn add/remove，感觉上比 npm 原本的 install/uninstall 要更清晰。</li></ul><h2 id="Yarn和npm命令对比"><a href="#Yarn和npm命令对比" class="headerlink" title="Yarn和npm命令对比"></a>Yarn和npm命令对比</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install === yarn </span><br><span class="line">npm install taco --save === yarn add taco</span><br><span class="line">npm uninstall taco --save === yarn remove taco</span><br><span class="line">npm install taco --save-dev === yarn add taco --dev</span><br><span class="line">npm update --save === yarn upgrade</span><br></pre></td></tr></table></figure><h2 id="npm的未来：npm5-0"><a href="#npm的未来：npm5-0" class="headerlink" title="npm的未来：npm5.0"></a>npm的未来：npm5.0</h2><p>有了yarn的压力之后，npm做了一些类似的改进。<br>\1. 默认新增了类似yarn.lock的 package-lock.json；<br>\2. git 依赖支持优化：这个特性在需要安装大量内部项目（例如在没有自建源的内网开发），或需要使用某些依赖的未发布版本时很有用。在这之前可能需要使用指定 commit<em>id 的方式来控制版本。<br>\3. 文件依赖优化：在之前的版本，如果将本地目录作为依赖来安装，将会把文件目录作为副本拷贝到 node</em>modules 中。而在 npm5 中，将改为使用创建 symlinks 的方式来实现（使用本地 tarball 包除外），而不再执行文件拷贝。这将会提升安装速度。目前yarn还不支持。</p><p>总结</p><p>在npm5.0之前，yarn的优势特别明显。但是在npm之后，通过以上一系列对比，我们可以看到 npm5 在速度和使用上确实有了很大提升，值得尝试，不过还没有超过yarn。</p><p>综上我个人的建议是如果你已经在个人项目上使用 yarn，并且没有遇到更多问题，目前完全可以继续使用。但如果有兼容 npm 的场景，或者身处在使用 npm，cnpm，tnpm 的团队，以及还没有切到 yarn 的项目，那现在就可以试一试 npm5 了。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/27449990&quot;&gt;npm和yarn的区别，我们该如何选择？&lt;/a&gt;转载自知乎&lt;/p&gt;
-&lt;p&gt;&lt;img src= &quot;/img/loading.gif&quot; data-lazy-src=&quot;https://
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
     <link href="http://abeduu.com/2020/08/29/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     <id>http://abeduu.com/2020/08/29/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</id>
     <published>2020-08-29T01:28:12.273Z</published>
@@ -135,56 +89,6 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>北大伦理学笔记3</title>
-    <link href="http://abeduu.com/2020/08/12/%E5%8C%97%E5%A4%A7%E4%BC%A6%E7%90%86%E5%AD%A6%E7%AC%94%E8%AE%B03/"/>
-    <id>http://abeduu.com/2020/08/12/%E5%8C%97%E5%A4%A7%E4%BC%A6%E7%90%86%E5%AD%A6%E7%AC%94%E8%AE%B03/</id>
-    <published>2020-08-12T08:14:42.000Z</published>
-    <updated>2020-08-28T13:19:12.881Z</updated>
-    
-    <content type="html"><![CDATA[<p>道德终极标准不仅能评价行为的善恶，还能评价道德本身的优劣</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;道德终极标准不仅能评价行为的善恶，还能评价道德本身的优劣&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>北大伦理学笔记1</title>
-    <link href="http://abeduu.com/2020/08/12/%E5%8C%97%E5%A4%A7%E4%BC%A6%E7%90%86%E5%AD%A6%E7%AC%94%E8%AE%B01/"/>
-    <id>http://abeduu.com/2020/08/12/%E5%8C%97%E5%A4%A7%E4%BC%A6%E7%90%86%E5%AD%A6%E7%AC%94%E8%AE%B01/</id>
-    <published>2020-08-12T01:51:49.000Z</published>
-    <updated>2020-08-12T03:15:08.432Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p><strong>“伦理学是关于优良道德的科学，是关于优良道德的制定方法和制定过程以及实现途径的科学”——伦理学界</strong></p></blockquote><p><strong>道德并不都是优良的</strong>，在历史上，人类奉行的道德规范很多是恶劣的，比如裹小脚，家天下（专制），三纲五常</p><p>五四运动时期，李大钊，胡适，吴虞，鲁迅认为传统道德，儒家道德规范是极其恶劣的，</p><blockquote><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每叶子都写着“仁义道德”几个字。我横竖睡不着觉，仔细看了半夜，才从字缝里看出字来，满本都写着两个字是“吃人”！——《狂人日记》</p></blockquote><p>规范都是人制定的，但是价值不是，<strong>和行为价值相符的规范就是优良的道德规范，相违背的就是恶劣的。</strong></p><p>王海明主张<strong>“为己利他”</strong>，认为其具有正道价值，而孔子也认为这具有负道价值，基督教也一样：</p><blockquote><p>君子喻于义，小人喻于利 ——《论语.里仁》</p></blockquote><p>我思：</p><p>每个时代的道德规范不同，行为价值的判定方式也不同，在现代往前看，我们认为行为价值不符，得出过去的道德规范非常恶劣的结论。同样，未来的人类看我们今天制定的规范也不见得抱有认同的态度。所以，我认为道德价值应该是有时代的局限性的，应结合时代背景去考虑他，而不是站在人性的制高点上去批判。</p><p>那么问题又来了，为何时代会局限道德规范，我认为还是人在某个阶段的利益上的权衡。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;“伦理学是关于优良道德的科学，是关于优良道德的制定方法和制定过程以及实现途径的科学”——伦理学界&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;道德并不都是优良的&lt;/strong&gt;，在历史上，人类奉行的
-      
-    
-    </summary>
-    
-    
-    
-      <category term="伦理学" scheme="http://abeduu.com/tags/%E4%BC%A6%E7%90%86%E5%AD%A6/"/>
     
   </entry>
   
@@ -343,30 +247,6 @@
   </entry>
   
   <entry>
-    <title>计划</title>
-    <link href="http://abeduu.com/2020/08/04/%E8%AE%A1%E5%88%92/"/>
-    <id>http://abeduu.com/2020/08/04/%E8%AE%A1%E5%88%92/</id>
-    <published>2020-08-04T15:17:35.000Z</published>
-    <updated>2020-08-04T15:23:01.154Z</updated>
-    
-    <content type="html"><![CDATA[<p>凌晨，我要调查市场。</p><p>明早，我要6点起床。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;凌晨，我要调查市场。&lt;/p&gt;
-&lt;p&gt;明早，我要6点起床。&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>社会待我太温柔</title>
     <link href="http://abeduu.com/2020/08/04/%E7%A4%BE%E4%BC%9A%E5%BE%85%E6%88%91%E5%A4%AA%E6%B8%A9%E6%9F%94/"/>
     <id>http://abeduu.com/2020/08/04/%E7%A4%BE%E4%BC%9A%E5%BE%85%E6%88%91%E5%A4%AA%E6%B8%A9%E6%9F%94/</id>
@@ -504,6 +384,127 @@
         &lt;p&gt;吾日三省吾身，上午思考关于学习的一些问题。&lt;br&gt;翻开一堆陈年笔记，有的很新，有的像用过的草纸。里面记载了许多奇奇怪怪的知识，比如《广义相对论》，《非欧几何》，《战争论》。&lt;/p&gt;
 &lt;p&gt;说好听点是热爱学习，兴趣广泛，有思想，有情怀，是五柳先生隔代传人。&lt;/p&gt;
 &lt;bloc
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>男人30不死</title>
+    <link href="http://abeduu.com/2020/07/23/%E7%94%B7%E4%BA%BA30%E4%B8%8D%E6%AD%BB/"/>
+    <id>http://abeduu.com/2020/07/23/%E7%94%B7%E4%BA%BA30%E4%B8%8D%E6%AD%BB/</id>
+    <published>2020-07-23T01:52:10.000Z</published>
+    <updated>2020-08-03T18:04:05.413Z</updated>
+    
+    <content type="html"><![CDATA[<p>有人说，男人，30岁就死了，只不过在70岁的时候埋。</p><p>曾经，我觉得，男人30，死得其所，因为我会在另一些人身上延续着生命与希望。</p><p>现在，我觉得不该去死，因为他们不值得。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;有人说，男人，30岁就死了，只不过在70岁的时候埋。&lt;/p&gt;
+&lt;p&gt;曾经，我觉得，男人30，死得其所，因为我会在另一些人身上延续着生命与希望。&lt;/p&gt;
+&lt;p&gt;现在，我觉得不该去死，因为他们不值得。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>男人女人</title>
+    <link href="http://abeduu.com/2020/07/23/%E7%94%B7%E4%BA%BA%E5%A5%B3%E4%BA%BA/"/>
+    <id>http://abeduu.com/2020/07/23/%E7%94%B7%E4%BA%BA%E5%A5%B3%E4%BA%BA/</id>
+    <published>2020-07-23T00:08:35.000Z</published>
+    <updated>2020-08-04T08:35:37.889Z</updated>
+    
+    <content type="html"><![CDATA[<p>男人也好，女人也罢。有时嘴上抹了蜜，有时唇边藏了毒。</p><p>蜜也好，毒也罢。只要清醒而不混沌，不要早早死去，则不惧人生苦厄。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;男人也好，女人也罢。有时嘴上抹了蜜，有时唇边藏了毒。&lt;/p&gt;
+&lt;p&gt;蜜也好，毒也罢。只要清醒而不混沌，不要早早死去，则不惧人生苦厄。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>神经病</title>
+    <link href="http://abeduu.com/2020/07/23/%E7%A5%9E%E7%BB%8F%E7%97%85/"/>
+    <id>http://abeduu.com/2020/07/23/%E7%A5%9E%E7%BB%8F%E7%97%85/</id>
+    <published>2020-07-22T17:48:36.000Z</published>
+    <updated>2020-08-04T10:39:07.792Z</updated>
+    
+    <content type="html"><![CDATA[<p>有时候，我看别人跟神经病一样。料想，别人可能也是这么看我的，至少在某些时候。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;有时候，我看别人跟神经病一样。料想，别人可能也是这么看我的，至少在某些时候。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>分手的严肃性</title>
+    <link href="http://abeduu.com/2020/07/23/%E5%88%86%E6%89%8B%E7%9A%84%E4%B8%A5%E8%82%83%E6%80%A7/"/>
+    <id>http://abeduu.com/2020/07/23/%E5%88%86%E6%89%8B%E7%9A%84%E4%B8%A5%E8%82%83%E6%80%A7/</id>
+    <published>2020-07-22T17:05:30.000Z</published>
+    <updated>2020-07-22T17:08:08.289Z</updated>
+    
+    <content type="html"><![CDATA[<p>分手应该具有严肃性，就像恋爱一样严肃。</p><p>当“分手”从我们嘴里轻易流出的时候，它将不具有严肃性，那么恋爱失去了严肃性。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;分手应该具有严肃性，就像恋爱一样严肃。&lt;/p&gt;
+&lt;p&gt;当“分手”从我们嘴里轻易流出的时候，它将不具有严肃性，那么恋爱失去了严肃性。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自信与机敏</title>
+    <link href="http://abeduu.com/2020/06/15/%E8%87%AA%E4%BF%A1%E4%B8%8E%E6%9C%BA%E6%95%8F/"/>
+    <id>http://abeduu.com/2020/06/15/%E8%87%AA%E4%BF%A1%E4%B8%8E%E6%9C%BA%E6%95%8F/</id>
+    <published>2020-06-15T01:39:29.000Z</published>
+    <updated>2020-08-03T17:44:57.641Z</updated>
+    
+    <content type="html"><![CDATA[<p>我女票说，“如果说话时能够自信昂扬，恰当的提高语速，会吸引很多客户”，</p><p>而她又说我，说话慢慢吞吞，她离开半小时后依然能接上我和别人的谈话，我觉得她说的对。</p><p>说话就应该自信，机敏，有重点，万不可让人离开半小时还能接上话。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我女票说，“如果说话时能够自信昂扬，恰当的提高语速，会吸引很多客户”，&lt;/p&gt;
+&lt;p&gt;而她又说我，说话慢慢吞吞，她离开半小时后依然能接上我和别人的谈话，我觉得她说的对。&lt;/p&gt;
+&lt;p&gt;说话就应该自信，机敏，有重点，万不可让人离开半小时还能接上话。&lt;/p&gt;
+
       
     
     </summary>
