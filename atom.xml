@@ -40,28 +40,6 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://abeduu.com/2020/12/09/%E8%AE%BA%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6%E7%9A%84%E5%AE%97%E6%95%99/"/>
-    <id>http://abeduu.com/2020/12/09/%E8%AE%BA%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6%E7%9A%84%E5%AE%97%E6%95%99/</id>
-    <published>2020-12-09T02:36:55.328Z</published>
-    <updated>2020-12-09T02:37:23.786Z</updated>
-    
-    <content type="html"><![CDATA[<p>“爱因斯坦在晚年开始迷信宗教”，我确定在过去某个时候，某个人跟我说了这句话，好像还是一个老师。那时别人说什么就是什么，我也很自然的相信了，之后对宗教问题虽有些关注，但没将其和爱因斯坦联系起来。直至我一个朋友向我推荐《我的世界观》才让我重新想起这句话，并借此机会重新思考“爱因斯坦在晚年开始迷信宗教”这句话。</p><p>首先我们把这句话分解一下，主语是爱因斯坦，一个大物理学家。当然，这并不能以此推出迷信宗教的行为是正确的，是具有物理意义的。我曾经问过一个人为什么信基督，她说以前她也不信，后来去了国外，说是见了很多科学家也去教堂，所以开始试着接触宗教，后来就入教了。她给我举了这个例子，并不能说明迷信宗教一定是对的，但也可以看出迷信宗教的并不全是傻子。</p><p>现在，我们看一下爱因斯坦的宗教和乡野村姑的宗教有何不同。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;“爱因斯坦在晚年开始迷信宗教”，我确定在过去某个时候，某个人跟我说了这句话，好像还是一个老师。那时别人说什么就是什么，我也很自然的相信了，之后对宗教问题虽有些关注，但没将其和爱因斯坦联系起来。直至我一个朋友向我推荐《我的世界观》才让我重新想起这句话，并借此机会重新思考“爱因
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>诚实者</title>
     <link href="http://abeduu.com/2020/10/20/%E8%AF%9A%E5%AE%9E%E8%80%85/"/>
     <id>http://abeduu.com/2020/10/20/%E8%AF%9A%E5%AE%9E%E8%80%85/</id>
@@ -77,58 +55,6 @@
         &lt;p&gt;我是一个诚实的人，之所以诚实，不是有多伟大，而是没有大脑。&lt;/p&gt;
 &lt;p&gt;这个结论可以从很多事上分析出现，在此记个两段，权当是用来纪念过去迷惑的青春以及警醒同样迷惑的现在。&lt;/p&gt;
 &lt;p&gt;表嫂生了孩子，问我，“孩子帅还是你哥帅”，我想了想，我需要延续自己诚实的形象，以增加别
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://abeduu.com/2020/09/02/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%8E%A9substrate%E8%B8%A9%E4%BA%86%E5%87%A0%E4%B8%AA%E5%A4%A7%E5%9D%91/"/>
-    <id>http://abeduu.com/2020/09/02/%E8%BF%99%E5%87%A0%E5%A4%A9%E7%8E%A9substrate%E8%B8%A9%E4%BA%86%E5%87%A0%E4%B8%AA%E5%A4%A7%E5%9D%91/</id>
-    <published>2020-09-01T18:02:35.786Z</published>
-    <updated>2020-09-01T18:02:35.976Z</updated>
-    
-    <content type="html"><![CDATA[<p>这几天玩substrate踩了几个大坑</p><ol><li><p>在windows下安装节点，发现微软商城打不开，shell更新wsl2失败，找遍了所有方法后放弃</p></li><li><p>用虚拟机安装了ubuntu20的server版，顺利安装，发现运行节点网页的时候打不开UI，没过多久，分配的10G硬盘用完，再次挂载后，不知道怎么合并分区，卒。而且可以预感到以自己的linux水平，用server以后会有很多坑，所以放弃（这里应该可以使用SSH，但当时气的直接删了server）</p></li><li><p>用虚拟机安装了ubuntu20的desktop版，不知道什么原因，更新速度奇慢无比，更新期间按了很多次skip，开机后有报错，不过这不算事。回到公司后，使用5G网络，安装速度变快。按照顺序一步步安装，节点很快的运行了起来，yarn start的时候不断加载网页，始终没有加载完成。terminal提示更新yarn，更新后报错。按网络提示删除node，使用npm等方法都试过，但均没用。后选择先更新yarn，再重装node，网页依旧不断加载，但terminal没有提示，等待1min后，加载成功。</p></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;这几天玩substrate踩了几个大坑&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;在windows下安装节点，发现微软商城打不开，shell更新wsl2失败，找遍了所有方法后放弃&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;用虚拟机安装了ubuntu20的server版，顺利安装，发现运行节点
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://abeduu.com/2020/08/29/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
-    <id>http://abeduu.com/2020/08/29/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</id>
-    <published>2020-08-29T01:28:12.273Z</published>
-    <updated>2020-08-29T01:28:12.474Z</updated>
-    
-    <content type="html"><![CDATA[<p>项目管理</p><p>谋而后动</p><p>从远古走来，起源于战争，推广及社会，不断演进中</p><p>1965年，以欧洲国家为主的一些国家成立了“国际项目管理协会”IPMA，1969年美国建立了“项目管理协会”PMA。</p><p>PMI（project management institute）项目管理学会推出了<strong>项目管理知识体系指南</strong>（project management body of knoeledge）简称 PMBOK Guide，证书为PMP</p><p>除此之外，还有《项目集管理标准》，《项目组合管理标准》</p><p>PMP备考学习方法-结构化+发散式+滴灌法</p><ul><li>广而不深</li><li>耗时渐进</li><li>充分理解</li></ul><p><img src= "/img/loading.gif" data-lazy-src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3557991767,3603351719&fm=26&gp=0.jpg" alt="img"></p><p>管理历史视角解读项目管理</p><blockquote><p>劳动分工《国富论》亚当斯密</p><p>标准化 《科学管理原理》泰勒</p><p>管理职能 《工业管理和一般管理》法约尔 五项基本职能职能：计划，组织，（指挥，协调）领导，控制</p><p>人际关系理论 《工业文明中的人类、社会问题》梅奥（照明实验，福利实验，访谈实验，群体实验）<strong>改变</strong>是重点</p><p>组织决策 《管理行为》 西蒙</p><p>目标管理 《管理的实践》 德鲁克 </p><p>效率和效果</p><p>有效和成功：有效的管理者与成功的管理者</p></blockquote><p><img src= "/img/loading.gif" data-lazy-src="C:\Users\Ushop\AppData\Roaming\Typora\typora-user-images\image-20200828215744124.png" alt="image-20200828215744124"></p><p>单项目视角解读项目管理</p><p>1.项目的概念：项目是为创造独特产品、服务或成果而进行的临时性工作</p><p>2.项目的特点：临时性，独特性，渐进明细，项目驱动变更</p><p>3.项目启动背景（4类）</p><p>4.项目结束：达到目标，达不到目标，需求不复存在，法律或便利</p><p>5.商业价值：有形价值，无形价值</p><p>6.项目管理：将知识、技能、工具和技术应用于项目活动，以满足项目的需要。项目管理使组织能够有效且高效地开展项目</p><p>7.项目管理的重要性：达成目标，解决问题，优化资源，管理制约</p><p>8.道德与专业行为规范（4个2），责任，尊重，公正，诚实</p><p>9.项目与运营</p><p><img src= "/img/loading.gif" data-lazy-src="C:\Users\Ushop\AppData\Roaming\Typora\typora-user-images\image-20200828221144770.png" alt="image-20200828221144770"></p><p>10</p><p><img src= "/img/loading.gif" data-lazy-src="C:\Users\Ushop\AppData\Roaming\Typora\typora-user-images\image-20200828221625944.png" alt="image-20200828221625944"></p><p>11、项目生命周期类型：预测性，适应型（2-4周1迭代）</p><p><img src= "/img/loading.gif" data-lazy-src="C:\Users\Ushop\AppData\Roaming\Typora\typora-user-images\image-20200828222013902.png" alt="image-20200828222013902"></p><p>12、</p><p><img src= "/img/loading.gif" data-lazy-src="C:\Users\Ushop\AppData\Roaming\Typora\typora-user-images\image-20200828222043055.png" alt="image-20200828222043055"></p><p><img src= "/img/loading.gif" data-lazy-src="C:\Users\Ushop\AppData\Roaming\Typora\typora-user-images\image-20200828222113841.png" alt="image-20200828222113841"></p><p>17.项目目标 SMART原则：明确的，可测量，可实现，相关联的，有时限的</p><p>18.项目成功标准，项目管理三约束以及其他</p><p><img src= "/img/loading.gif" data-lazy-src="C:\Users\Ushop\AppData\Roaming\Typora\typora-user-images\image-20200828222711399.png" alt="image-20200828222711399"></p><p>19.项目约束目标间的关系</p><p><img src= "/img/loading.gif" data-lazy-src="C:\Users\Ushop\AppData\Roaming\Typora\typora-user-images\image-20200828223018357.png" alt="image-20200828223018357"></p><p>20.项目所处环境对项目的影响</p><p>21.事业环境因素（EEF），企业文化等</p><p>22.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;项目管理&lt;/p&gt;
-&lt;p&gt;谋而后动&lt;/p&gt;
-&lt;p&gt;从远古走来，起源于战争，推广及社会，不断演进中&lt;/p&gt;
-&lt;p&gt;1965年，以欧洲国家为主的一些国家成立了“国际项目管理协会”IPMA，1969年美国建立了“项目管理协会”PMA。&lt;/p&gt;
-&lt;p&gt;PMI（project mana
       
     
     </summary>
@@ -501,6 +427,80 @@
       
         &lt;p&gt;有时候，我看别人跟神经病一样。料想，别人可能也是这么看我的，至少在某些时候。&lt;/p&gt;
 
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>分手的严肃性</title>
+    <link href="http://abeduu.com/2020/07/23/%E5%88%86%E6%89%8B%E7%9A%84%E4%B8%A5%E8%82%83%E6%80%A7/"/>
+    <id>http://abeduu.com/2020/07/23/%E5%88%86%E6%89%8B%E7%9A%84%E4%B8%A5%E8%82%83%E6%80%A7/</id>
+    <published>2020-07-22T17:05:30.000Z</published>
+    <updated>2020-07-22T17:08:08.289Z</updated>
+    
+    <content type="html"><![CDATA[<p>分手应该具有严肃性，就像恋爱一样严肃。</p><p>当“分手”从我们嘴里轻易流出的时候，它将不具有严肃性，那么恋爱失去了严肃性。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;分手应该具有严肃性，就像恋爱一样严肃。&lt;/p&gt;
+&lt;p&gt;当“分手”从我们嘴里轻易流出的时候，它将不具有严肃性，那么恋爱失去了严肃性。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自信与机敏</title>
+    <link href="http://abeduu.com/2020/06/15/%E8%87%AA%E4%BF%A1%E4%B8%8E%E6%9C%BA%E6%95%8F/"/>
+    <id>http://abeduu.com/2020/06/15/%E8%87%AA%E4%BF%A1%E4%B8%8E%E6%9C%BA%E6%95%8F/</id>
+    <published>2020-06-15T01:39:29.000Z</published>
+    <updated>2020-08-03T17:44:57.641Z</updated>
+    
+    <content type="html"><![CDATA[<p>我女票说，“如果说话时能够自信昂扬，恰当的提高语速，会吸引很多客户”，</p><p>而她又说我，说话慢慢吞吞，她离开半小时后依然能接上我和别人的谈话，我觉得她说的对。</p><p>说话就应该自信，机敏，有重点，万不可让人离开半小时还能接上话。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我女票说，“如果说话时能够自信昂扬，恰当的提高语速，会吸引很多客户”，&lt;/p&gt;
+&lt;p&gt;而她又说我，说话慢慢吞吞，她离开半小时后依然能接上我和别人的谈话，我觉得她说的对。&lt;/p&gt;
+&lt;p&gt;说话就应该自信，机敏，有重点，万不可让人离开半小时还能接上话。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>长短电线思辨</title>
+    <link href="http://abeduu.com/2020/06/15/%E9%95%BF%E7%9F%AD%E7%94%B5%E7%BA%BF%E6%80%9D%E8%BE%A8/"/>
+    <id>http://abeduu.com/2020/06/15/%E9%95%BF%E7%9F%AD%E7%94%B5%E7%BA%BF%E6%80%9D%E8%BE%A8/</id>
+    <published>2020-06-15T01:07:52.000Z</published>
+    <updated>2020-08-03T17:45:17.104Z</updated>
+    
+    <content type="html"><![CDATA[<p>摆地摊，我带了根6m的电线，到中间的小屋拉电。</p><p>后发现，摊位和小屋距离太远，我就再在6m的插排上接了3m的电线插座。</p><p>于是，中间有个容易被踢到的节，摆到一半，管理人员叫我把线拔掉。</p><p>今天我忽然想到，先接3m的线，再接6m的线不是完事了吗。</p><p>从物理上看，电线总长度一致，但是插座的位置改变了，避免插座在危险区。</p><p>从思维的角度上看，先上车后补票，先接长的再接短的，这是一种思维定势，且遇到问题了都转不了弯。</p><p>我们需要摆脱惯性思维，因地制宜，考虑通过改变连接方式，转移矛盾点，从而消除矛盾。矛盾在一个地方是矛盾，但是在另一个场景中可能就不是矛盾。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;摆地摊，我带了根6m的电线，到中间的小屋拉电。&lt;/p&gt;
+&lt;p&gt;后发现，摊位和小屋距离太远，我就再在6m的插排上接了3m的电线插座。&lt;/p&gt;
+&lt;p&gt;于是，中间有个容易被踢到的节，摆到一半，管理人员叫我把线拔掉。&lt;/p&gt;
+&lt;p&gt;今天我忽然想到，先接3m的线，再接6m的线不是完事
       
     
     </summary>
