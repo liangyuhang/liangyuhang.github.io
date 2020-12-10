@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://abeduu.com/2020/12/10/%E7%9D%A1%E8%A7%89%E7%9A%84%E6%97%B6%E5%80%99%E5%86%8D%E5%B9%B2/</loc>
+    
+    <lastmod>2020-12-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://abeduu.com/2020/12/09/%E6%8E%92%E9%98%9F%E4%B9%B0%E5%A5%B6%E8%8C%B6%E6%98%AF%E9%A6%96%E5%96%84%E5%90%97/</loc>
     
     <lastmod>2020-12-09</lastmod>
@@ -340,7 +347,7 @@
 
   <url>
     <loc>http://abeduu.com/</loc>
-    <lastmod>2020-12-09</lastmod>
+    <lastmod>2020-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -348,21 +355,28 @@
   
   <url>
     <loc>http://abeduu.com/tags/%E6%9D%82%E8%AE%B0/</loc>
-    <lastmod>2020-12-09</lastmod>
+    <lastmod>2020-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://abeduu.com/tags/%E5%93%B2%E6%80%9D/</loc>
-    <lastmod>2020-12-09</lastmod>
+    <lastmod>2020-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://abeduu.com/tags/https-ss3-bdstatic-com-70cFv8Sh-Q1YnxGkpoWK1HF6hhy-it-u-2280410105-3636921806-fm-26-gp-0-jpg/</loc>
-    <lastmod>2020-12-09</lastmod>
+    <lastmod>2020-12-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://abeduu.com/tags/https-timgsa-baidu-com-timg-image-quality-80-size-b9999-10000-sec-1607613874148-di-fff21f3f31ea0f2af7b4e20e8e59d30a-imgtype-0-src-http-3A-2F-2Fs9-rr-itc-cn-2Fr-2FwapChange-2F20168-15-15-2Fa7vdy981655109650596-jpg/</loc>
+    <lastmod>2020-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
